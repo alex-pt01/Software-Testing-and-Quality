@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="440.5" y="-21.5">euromillions.Dip</node>
+    <node x="-101.5" y="-143.5">sets.SetOfNaturals</node>
+    <node x="-38.5" y="814.5">euromillions.EuromillionsDraw</node>
+    <node x="-12.5" y="456.5">euromillions.CuponEuromillions</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Orthogonal" zoom="1.0" x="571.0" y="539.0" />
+  <SelectedNodes>
+    <node>sets.SetOfNaturals</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
