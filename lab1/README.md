@@ -65,6 +65,17 @@ setUp e tearDown correm antes e depois de cada metodo respetivamente.
 
 **assertTrue( ___ )**
 **assertEquals(** *expect*: 0, stack.size() ,  message error)    //example
+ e outras (ver Slides)
+ 
+ 
 
+
+Questions
+
+**Quais classes / métodos oferecem menos cobertura? Todos os ramos de decisão possíveis estão sendo cobertos?**
+
+
+A classe **CuponEuromillions** ofereceu menos cobertura porque não existiam testes para a **função** **format**. Por outro lado, a classe **Dip**  não apresentava testes para os métodos implementados.
+É de notar também que a classe **EuromillionsDraw** apenas tinha dois métodos sem testes implementados.
 
 
