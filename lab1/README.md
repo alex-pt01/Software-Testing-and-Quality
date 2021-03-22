@@ -4,7 +4,7 @@
 
 "should have many more low-level [UnitTests](https://martinfowler.com/bliki/UnitTest.html) than high level [BroadStackTests](https://martinfowler.com/bliki/BroadStackTest.html) running through a GUI."
 
-<img src="https://i.gyazo.com/9daef5df1e7b5832d1b40c83eccbabde.png" alt="img" style="zoom:33%;" />
+<img src="https://i.gyazo.com/9daef5df1e7b5832d1b40c83eccbabde.png" alt="img" style="zoom:15%;" />
 
 "It's easy to record tests, and the tests can be recorded by people with no knowledge of programming."
 
