@@ -5,12 +5,12 @@ import exc1.Stock;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class StocksPortfolio {
 
     private String name;
     private IStockmarketService stockMarket;
     private List<Stock> stocks = new ArrayList<Stock>();
-
 
 
     public IStockmarketService getStockMarket() {
@@ -24,7 +24,7 @@ public class StocksPortfolio {
     public double getTotalValue() {
         double value = 0;
 
-        for(Stock s: stocks)
+        for (Stock s : stocks)
             value += (this.stockMarket.getPrice(s.getName()) * s.getQuantity());
 
         return value;

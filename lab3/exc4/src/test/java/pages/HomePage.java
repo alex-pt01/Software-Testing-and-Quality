@@ -1,4 +1,5 @@
 package pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +10,7 @@ public class HomePage {
     private WebDriver driver;
 
     //Page URL
-    private static String PAGE_URL="https://www.toptal.com";
+    private static String PAGE_URL = "https://www.toptal.com";
 
     //Locators
     @FindBy(tagName = "h1")
@@ -20,17 +21,18 @@ public class HomePage {
     private WebElement developerApplyButton;
 
     //Constructor
-    public HomePage(WebDriver driver){
-        this.driver=driver;
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
         driver.get(PAGE_URL);
         //Initialise Elements
         PageFactory.initElements(driver, this);
     }
 
-    public boolean isPageOpened(){
+    public boolean isPageOpened() {
         return heading.getText().toString().contains("Hire the top");
     }
-    public void clickOnDeveloperApplyButton(){
+
+    public void clickOnDeveloperApplyButton() {
 
         developerApplyButton.click();
 

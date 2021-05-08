@@ -24,7 +24,7 @@ class EmployeeRepositoryTest {
         entityManager.persistAndFlush(alex); //ensure data is persisted at this point
 
         Employee found = employeeRepository.findByName(alex.getName());
-        assertThat( found ).isEqualTo(alex);
+        assertThat(found).isEqualTo(alex);
     }
 
     @Test
@@ -40,7 +40,7 @@ class EmployeeRepositoryTest {
 
         Employee fromDb = employeeRepository.findById(emp.getId()).orElse(null);
         assertThat(fromDb).isNotNull();
-        assertThat(fromDb.getEmail()).isEqualTo( emp.getEmail());
+        assertThat(fromDb.getEmail()).isEqualTo(emp.getEmail());
     }
 
     @Test

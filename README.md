@@ -1,8 +1,8 @@
 # tqs_portfolio
 
-Autor: 	Alexandre Rodrigues
+Autor:    Alexandre Rodrigues
 
-Nmec:	 92951
+Nmec:     92951
 
 
 

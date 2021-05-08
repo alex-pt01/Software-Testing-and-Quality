@@ -14,7 +14,7 @@ public class ApplyAsDeveloper {
     WebDriver driver;
 
     @BeforeEach
-    public void setup(){
+    public void setup() {
         //use FF Driver
         driver = new FirefoxDriver();
     }
@@ -27,11 +27,10 @@ public class ApplyAsDeveloper {
         home.clickOnDeveloperApplyButton();
 
         //Create object of DeveloperPortalPage
-        DeveloperApplyPage applyPage= new DeveloperApplyPage(driver);
+        DeveloperApplyPage applyPage = new DeveloperApplyPage(driver);
 
         //Check if page is opened
         assertTrue(home.isPageOpened());
-
 
 
         //Fill up data

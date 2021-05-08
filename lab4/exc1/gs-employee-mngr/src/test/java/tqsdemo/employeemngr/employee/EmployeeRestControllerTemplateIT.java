@@ -52,7 +52,7 @@ public class EmployeeRestControllerTemplateIT {
     }
 
     @Test
-    public void givenEmployees_whenGetEmployees_thenStatus200()  {
+    public void givenEmployees_whenGetEmployees_thenStatus200() {
         createTestEmployee("bob", "bob@deti.com");
         createTestEmployee("alex", "alex@deti.com");
 

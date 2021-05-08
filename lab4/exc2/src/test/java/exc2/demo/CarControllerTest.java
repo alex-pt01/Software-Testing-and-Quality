@@ -28,28 +28,26 @@ class CarControllerTest {
     CarManagerService carService;
 
     @Test
-    public void whenCarCreated_returnCreatedCar() throws Exception{
-        Car fiat = new Car("fiat","panda");
+    public void whenCarCreated_returnCreatedCar() throws Exception {
+        Car fiat = new Car("fiat", "panda");
         fiat.setId(1L);
         when(carService.save(Mockito.any())).thenReturn(fiat);
         testServlet.perform(post("/api/cars")).contentType(MediaType.APPLICATION_JSON)
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.marker", is("fiat")));
-        
+
         verify(carService, times(1)).save("fiat");
 
     }
 
     @Test
-    public void whenCarValidIdReturnCar() throws Exception{
+    public void whenCarValidIdReturnCar() throws Exception {
         Car car = new Car();
         car.setId(2L);
         car.setMaker("vw");
         car.setModel("passat");
         when(carService.getCarDetails(car.getId())).thenReturn(Optional.of(car));
         testServlet.perform(MockMvcRequestBuilders.get("/api/cars/2L"));
-        
-
 
 
     }

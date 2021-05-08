@@ -36,11 +36,11 @@ public class EmployeeController_WithMockServiceIT {
     }
 
     @Test
-    public void whenPostEmployee_thenCreateEmployee( ) throws Exception {
+    public void whenPostEmployee_thenCreateEmployee() throws Exception {
         Employee alex = new Employee("alex", "alex@deti.com");
 
         //given(service.save(Mockito.any())).willReturn(alex);
-        when( service.save(Mockito.any()) ).thenReturn( alex);
+        when(service.save(Mockito.any())).thenReturn(alex);
 
         mvc.perform(post("/api/employees").contentType(MediaType.APPLICATION_JSON).content(JsonUtil.toJson(alex)))
                 .andExpect(status().isCreated())

@@ -1,4 +1,3 @@
-
 Feature: Basic Arithmetic
 
   Background: A Calculator

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Calculator {
     private final Deque<Number> stack = new LinkedList<Number>();
-    private static final List<String> OPS = asList("-", "+", "*", "/","^");
+    private static final List<String> OPS = asList("-", "+", "*", "/", "^");
 
     public void push(Object arg) {
         if (OPS.contains(arg)) {
@@ -22,7 +22,7 @@ public class Calculator {
             } else if (arg.equals("/")) {
                 val = x.doubleValue() / y.doubleValue();
             } else if (arg.equals("^")) {
-                val = Math.pow(x.intValue(),y.intValue());
+                val = Math.pow(x.intValue(), y.intValue());
             }
             push(val);
         } else {

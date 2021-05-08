@@ -20,9 +20,8 @@ public class AddressResolverIT {
     private AddressResolver resolver;
 
 
-
     @BeforeEach
-    public void init(){
+    public void init() {
         client = new TqsBasicHttpClient();
         resolver = new AddressResolver(client);
     }
@@ -30,7 +29,7 @@ public class AddressResolverIT {
     @Test
     public void whenGoodCoordidates_returnAddress() throws IOException, URISyntaxException, ParseException {
         Address result = resolver.findAddressForLocation(40.640661, -8.656688);
-        assertEquals( result, new Address( "Cais do Alboi", "Glória e Vera Cruz", "Centro", "3800-246", null) );
+        assertEquals(result, new Address("Cais do Alboi", "Glória e Vera Cruz", "Centro", "3800-246", null));
 
     }
 

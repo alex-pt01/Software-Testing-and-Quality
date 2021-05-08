@@ -16,8 +16,8 @@ class FirefoxJupiterTest {
     FirefoxDriver driver;
 
     //Constructor
-    public FirefoxJupiterTest(FirefoxDriver driver){
-        this.driver=driver;
+    public FirefoxJupiterTest(FirefoxDriver driver) {
+        this.driver = driver;
     }
 
     @Test
@@ -37,7 +37,7 @@ class FirefoxJupiterTest {
     }
 
     @Test
-    void testWithHeadless(HtmlUnitDriver driver){
+    void testWithHeadless(HtmlUnitDriver driver) {
         driver.get("https://www.ua.pt");
         assertThat(driver.getTitle(), containsString("Universidade de Aveiro"));
 

@@ -16,7 +16,7 @@ public class TqsStack<T> {
         this.stack.add(element);
     }
 
-    public T pop(){
+    public T pop() {
         try {
             //remove o elemento
             return this.stack.remove(this.stack.size() - 1);
@@ -33,11 +33,11 @@ public class TqsStack<T> {
     }
 
 
-    public int size(){
-        return this.stack.size() ;
+    public int size() {
+        return this.stack.size();
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return this.stack.isEmpty();
 
     }
@@ -45,8 +45,6 @@ public class TqsStack<T> {
     public void clear() {
         this.stack.clear();
     }
-
-
 
 
 }

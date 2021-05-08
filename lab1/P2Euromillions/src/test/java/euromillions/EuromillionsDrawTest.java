@@ -1,8 +1,9 @@
 package euromillions;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class EuromillionsDrawTest {
 
@@ -10,7 +11,7 @@ public class EuromillionsDrawTest {
 
 
     @BeforeEach
-    public void setUp() throws Exception {
+    public void setUp() {
         sampleCuppon = new CuponEuromillions();
         sampleCuppon.addDipToCuppon(Dip.generateRandomDip());
         sampleCuppon.addDipToCuppon(Dip.generateRandomDip());

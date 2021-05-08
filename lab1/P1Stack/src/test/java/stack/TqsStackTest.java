@@ -90,7 +90,9 @@ class TqsStackTest {
         //check with testStack object
         testStack.clear();
         assertTrue(testStack.isEmpty(), "Stack should be empty after clear");
-        assertThrows(NoSuchElementException.class, () -> { testStack.pop(); });
+        assertThrows(NoSuchElementException.class, () -> {
+            testStack.pop();
+        });
     }
 
     @Test
@@ -99,7 +101,9 @@ class TqsStackTest {
         //check with testStack object
         testStack.clear();
         assertTrue(testStack.isEmpty(), "Stack should be empty after clear");
-        assertThrows(NoSuchElementException.class, () -> { testStack.peek(); });
+        assertThrows(NoSuchElementException.class, () -> {
+            testStack.peek();
+        });
     }
 
     @Test
@@ -112,18 +116,19 @@ class TqsStackTest {
         assertThrows(IllegalStateException.class, () -> {
             boundedStack.push(3.99);
         });
-        }
+    }
 
     @Test
     void size() {
         TqsStack<String> stack = new TqsStack<>(3);
         //se passou o teste não vai aparecer
-        assertEquals(0, stack.size(), "empty stack reports non-zero size" );
+        assertEquals(0, stack.size(), "empty stack reports non-zero size");
 
     }
 
     @org.junit.jupiter.api.Test
-    @Disabled //não considerar este teste
+    @Disabled
+        //não considerar este teste
 
     void push() {
 

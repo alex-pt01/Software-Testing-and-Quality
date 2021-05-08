@@ -21,7 +21,7 @@ public class EmployeeService_UnitTest {
     // lenient is required because we load some expectations in the setup
     // that are not used in all the tests. As an alternative, the expectations
     // could move into each test method and be trimmed: no need for lenient
-    @Mock( lenient = true)
+    @Mock(lenient = true)
     private EmployeeRepository employeeRepository;
 
     @InjectMocks

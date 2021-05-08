@@ -34,12 +34,6 @@ class StocksPortfolioTest {
         verify(market, times(2)).getPrice(anyString());
 
 
-
-
-
-
-
-
     }
 
 }

@@ -18,10 +18,12 @@ public class BlazeTest {
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
+
     @AfterEach
     public void tearDown() {
         driver.quit();
     }
+
     @Test
     public void blazeTest() {
         driver.get("https://blazedemo.com/");

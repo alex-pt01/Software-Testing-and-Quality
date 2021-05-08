@@ -8,4 +8,4 @@ Please feel free to have a look at [my blog] for the full tutorial.
 
 **2014 Micha Kops / hasCode.com**
 
-   [my blog]:http://www.hascode.com/
+[my blog]:http://www.hascode.com/

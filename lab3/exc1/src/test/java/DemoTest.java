@@ -15,8 +15,8 @@ class DemoTest {
     void setUp() {
         System.setProperty("webdriver.chrome.driver", "/where/you/put/chromedriver");
 
-        FirefoxOptions options = new FirefoxOptions().addPreference("browser.startup.homepage",255);
-        browser= new FirefoxDriver(options);
+        FirefoxOptions options = new FirefoxOptions().addPreference("browser.startup.homepage", 255);
+        browser = new FirefoxDriver(options);
     }
 
     @org.junit.jupiter.api.AfterEach
@@ -25,7 +25,7 @@ class DemoTest {
     }
 
     @Test
-    public void site_header_is_on_home_page(){
+    public void site_header_is_on_home_page() {
         browser.get("https://www.saucelabs.com");
         WebElement href = browser.findElement(By.xpath("//a[@href='https://accounts.saucelabs.com/']"));
         assertTrue((href.isDisplayed()));
