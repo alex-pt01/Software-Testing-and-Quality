@@ -15,6 +15,7 @@ import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 
 /**
+ *
  * @author ico
  */
 public class TqsBasicHttpClient implements ISimpleHttpClient {
@@ -28,9 +29,9 @@ public class TqsBasicHttpClient implements ISimpleHttpClient {
             HttpEntity entity = response.getEntity();
             return EntityUtils.toString(entity);
         } finally {
-            if (response != null)
-                response.close();
-        }
+        if( response != null)
+            response.close();
+}
     }
-
+    
 }

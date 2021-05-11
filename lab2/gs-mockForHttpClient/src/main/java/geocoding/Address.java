@@ -8,11 +8,12 @@ package geocoding;
 import java.util.Objects;
 
 /**
+ *
  * @author ico
  */
 public class Address {
 
-    private String road;
+       private String road;
 
     public String getRoad() {
         return road;
@@ -121,5 +122,6 @@ public class Address {
         return true;
     }
 
-
+    
+    
 }

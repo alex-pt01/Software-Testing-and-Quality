@@ -8,9 +8,10 @@ package connection;
 import java.io.IOException;
 
 /**
+ *
  * @author ico
  */
 public interface ISimpleHttpClient {
-
+    
     public String get(String url) throws IOException;
 }
