@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Air Pollution</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/et-lineicon.css" rel="stylesheet" />
+
+  <link href="/css/font-awesome.min.css" rel="stylesheet" />
+
+  <link href="/css/style.css" rel="stylesheet" />
+
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+
+
+<section class="newsletter">
+<div style=" margin-top: 50px;" class="container">
+<div>
+<h2>Cache History</h2>
+  <br><br>
+<div class="col-md-8 col-md-offset-1" >
+  <div class="main_content">
+
+    <div th:if="${not #lists.isEmpty(cacheHistoryList)}">
+
+
+      <table class="table table-striped">
+        <tr>
+          <th>Date</th>
+          <th>Hits</th>
+          <th>Misses</th>
+          <th>Requests</th>
+
+        </tr>
+        <tr th:each="cacheH: ${cacheHistoryList}">
+          <td th:utext="${cacheH.getTime()}"></td>
+          <td th:utext="${cacheH.getHits()}"></td>
+          <td th:utext="${cacheH.getMisses()}"></td>
+          <td th:utext="${cacheH.getRequests()}"></td>
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="newsletter">
+<div class="container">
+
+<div >
+<div class="col-md-12 col-md-offset-10 ">
+  <div class="main_content">
+                      <span class="input-group-btn">
+                          <a class="btn btn-custom news-btn" th:href="@{/cacheStatistics}"  type="submit" name="subscribe_btn"><span>Cache Statistics</span><i class="fa fa-dashboard "></i></a>
+                      </span>
+    <br><br>
+    <div class="main_content">
+                      <span class="input-group-btn">
+                          <a class="btn btn-custom news-btn" th:href="@{/}"  type="submit" name="subscribe_btn"><span>Back to Dashboard</span><i class="fa fa-dashboard "></i></a>
+                      </span>
+    </div>
+    <br><br>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- JAVASCRIPTS -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.lwtCountdown-1.0.js"></script>
+<script src="/js/jquery.stellar.min.js"></script>
+<script src="/js/jquery.nicescroll.min.js"></script>
+<script src="/js/animated.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
