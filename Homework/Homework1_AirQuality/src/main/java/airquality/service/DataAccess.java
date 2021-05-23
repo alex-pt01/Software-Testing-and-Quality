@@ -45,6 +45,8 @@ public class DataAccess {
     }
 
 
+
+
     public Map<Location, List<AirPollutionForecast>> getDataByLocationAndDate(String location, String time) throws URISyntaxException, IOException {
         LOGGER.info("Getting data by location and date from data access class");
 

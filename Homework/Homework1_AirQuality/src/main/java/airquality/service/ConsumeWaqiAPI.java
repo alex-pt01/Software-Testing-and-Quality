@@ -105,6 +105,12 @@ public class ConsumeWaqiAPI {
         return data;
     }
 
+
+
+
+
+
+
     public static Map<Location, List<AirPollutionForecast>> getDataByLocationAndDate(String location, String time)  throws IOException {
         LOGGER.info("Consume API by location and date searched");
         URLConnection connection = new URL(API_URL + location + TOKEN).openConnection();

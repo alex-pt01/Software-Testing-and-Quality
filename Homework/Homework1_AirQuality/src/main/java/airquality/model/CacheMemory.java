@@ -43,7 +43,7 @@ public class CacheMemory {
         this.data.putAll(locationData);
 
     }
-
+    //check if a specific location exists
     public Boolean localExists(String location) {
         for (Map.Entry<Location, List<AirPollutionForecast>> entry : data.entrySet()) {
             if (entry.getKey().getName().equals(location)) {
@@ -53,6 +53,7 @@ public class CacheMemory {
         return false;
     }
 
+    //get location if exists
     public Location getLocation(String location) {
         LOGGER.info("Getting location from cache");
         for (Map.Entry<Location, List<AirPollutionForecast>> entry : data.entrySet()) {
@@ -62,6 +63,8 @@ public class CacheMemory {
         }
         return null;
     }
+
+    //get location as a json format
     public String getLocationAsJson() {
         LOGGER.info("Getting cache history from cache as json body");
 
@@ -74,6 +77,7 @@ public class CacheMemory {
 
     }
 
+    //get location and location data (air forecast)
     public Map<Location, List<AirPollutionForecast>> getDataByLocation(String location) {
         Map<Location, List<AirPollutionForecast>> dataSearched = new LinkedHashMap<>();
         this.requests++;
@@ -95,6 +99,7 @@ public class CacheMemory {
         this.cacheHistories.add(cacheHistory);
         return dataSearched;
     }
+
 
 
     public Map<Location, List<AirPollutionForecast>> getDataByLocationAndDate(String location, String date) {
@@ -120,6 +125,7 @@ public class CacheMemory {
     }
 
 
+    //get all cache data
     public Map<Location, List<AirPollutionForecast>> getData() {
         return data;
     }

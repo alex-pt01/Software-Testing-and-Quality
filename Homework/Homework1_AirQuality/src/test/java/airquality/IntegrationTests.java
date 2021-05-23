@@ -104,4 +104,5 @@ public class IntegrationTests {
         when().get("/cacheJsonStats").then().assertThat().statusCode(200)
                 .and().body(equalTo("{}"));
     }
+
 }

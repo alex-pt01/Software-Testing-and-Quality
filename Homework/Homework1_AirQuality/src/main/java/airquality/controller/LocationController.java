@@ -40,6 +40,7 @@ public class LocationController {
             content.add( entry.getKey());
             content.add(entry.getValue());
         }
+
         if(!content.isEmpty()) {
             LOGGER.info("Obtained date!");
             model.addAttribute("locationData", content.get(0));

@@ -1,313 +1,509 @@
-17 May 2021 - 16:40:48.090 [main] DEBUG o.s.boot.SpringApplication - Loading source class airquality.Homework1AirQualityApplication
-17 May 2021 - 16:40:48.531 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-17 May 2021 - 16:40:48.735 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28fa700e
-17 May 2021 - 16:40:51.206 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: C:\Users\Alex\.m2\repository\org\springframework\boot\spring-boot\2.4.5\spring-boot-2.4.5.jar
-17 May 2021 - 16:40:51.206 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: C:\Users\Alex\.m2\repository\org\springframework\boot\spring-boot\2.4.5\spring-boot-2.4.5.jar
-17 May 2021 - 16:40:51.206 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-17 May 2021 - 16:40:51.269 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
-17 May 2021 - 16:40:51.628 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-17 May 2021 - 16:40:51.628 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2893 ms
-17 May 2021 - 16:40:51.754 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-17 May 2021 - 16:40:51.754 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
-17 May 2021 - 16:40:51.804 [main] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
-17 May 2021 - 16:40:51.804 [main] DEBUG o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
-17 May 2021 - 16:40:51.804 [main] DEBUG o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
-17 May 2021 - 16:40:52.518 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-17 May 2021 - 16:40:52.691 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
-17 May 2021 - 16:40:52.706 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
-17 May 2021 - 16:40:52.847 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-17 May 2021 - 16:40:52.894 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-17 May 2021 - 16:40:53.941 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 60364 (http) with context path ''
-17 May 2021 - 16:40:53.973 [main] DEBUG o.s.boot.devtools.restart.Restarter - Creating new Restarter for thread Thread[main,5,main]
-17 May 2021 - 16:40:57.902 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17 May 2021 - 16:40:57.903 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-17 May 2021 - 16:40:57.904 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-17 May 2021 - 16:40:57.904 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-17 May 2021 - 16:40:57.906 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@467696d8
-17 May 2021 - 16:40:57.906 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2ecb6f2b
-17 May 2021 - 16:40:57.907 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-17 May 2021 - 16:40:57.907 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-17 May 2021 - 16:40:57.926 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
-17 May 2021 - 16:40:57.932 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#index(Model)
-17 May 2021 - 16:40:57.989 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:40:58.615 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.665 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
-17 May 2021 - 16:40:58.670 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
-17 May 2021 - 16:40:58.671 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
-17 May 2021 - 16:40:58.671 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
-17 May 2021 - 16:40:58.678 [http-nio-auto-1-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
-17 May 2021 - 16:40:58.685 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
-17 May 2021 - 16:40:58.692 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.692 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.692 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.692 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.692 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.693 [http-nio-auto-1-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.731 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.733 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.733 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.739 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.745 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.748 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
-17 May 2021 - 16:40:58.749 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.749 [http-nio-auto-1-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
-17 May 2021 - 16:40:58.749 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
-17 May 2021 - 16:40:58.750 [http-nio-auto-1-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.752 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.764 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
-17 May 2021 - 16:40:58.765 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.780 [http-nio-auto-1-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.807 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.820 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.837 [http-nio-auto-1-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.846 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.885 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
-17 May 2021 - 16:40:58.892 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.940 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:40:58.981 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
-17 May 2021 - 16:40:58.983 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:40:58.986 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
-17 May 2021 - 16:40:58.987 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
-17 May 2021 - 16:40:58.996 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
-17 May 2021 - 16:40:58.999 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-17 May 2021 - 16:40:59.038 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-17 May 2021 - 16:40:59.040 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon May 17 16:40:59 BST 2021, status=404, error=Not Found, message=, path=/favicon.ico}]
-17 May 2021 - 16:40:59.196 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
-17 May 2021 - 16:40:59.266 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/cacheStatistics", parameters={}
-17 May 2021 - 16:40:59.266 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#cacheInfo(Model)
-17 May 2021 - 16:40:59.270 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:40:59.348 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.263 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
-17 May 2021 - 16:41:01.264 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#index(Model)
-17 May 2021 - 16:41:01.272 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:41:01.278 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.382 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
-17 May 2021 - 16:41:01.385 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
-17 May 2021 - 16:41:01.390 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
-17 May 2021 - 16:41:01.393 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
-17 May 2021 - 16:41:01.396 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
-17 May 2021 - 16:41:01.393 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.396 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.397 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.397 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.399 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
-17 May 2021 - 16:41:01.391 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.400 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.406 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.406 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.412 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.410 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.409 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.406 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.425 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
-17 May 2021 - 16:41:01.426 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
-17 May 2021 - 16:41:01.426 [http-nio-auto-1-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
-17 May 2021 - 16:41:01.426 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.427 [http-nio-auto-1-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.427 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.429 [http-nio-auto-1-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
-17 May 2021 - 16:41:01.430 [http-nio-auto-1-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.437 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.440 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.442 [http-nio-auto-1-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.442 [http-nio-auto-1-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.633 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
-17 May 2021 - 16:41:01.634 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.643 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:01.700 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
-17 May 2021 - 16:41:01.702 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.704 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
-17 May 2021 - 16:41:01.705 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
-17 May 2021 - 16:41:01.706 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
-17 May 2021 - 16:41:01.707 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-17 May 2021 - 16:41:01.708 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-17 May 2021 - 16:41:01.709 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon May 17 16:41:01 BST 2021, status=404, error=Not Found, message=, path=/favicon.ico}]
-17 May 2021 - 16:41:01.711 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
-17 May 2021 - 16:41:01.949 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/pattern.png", parameters={}
-17 May 2021 - 16:41:01.950 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:01.955 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:02.191 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/location?name=Porto", parameters={masked}
-17 May 2021 - 16:41:02.192 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#getDataByLocation(Location, Model)
-17 May 2021 - 16:41:03.850 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:41:03.865 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.486 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
-17 May 2021 - 16:41:05.488 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#index(Model)
-17 May 2021 - 16:41:05.491 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:41:05.496 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.561 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
-17 May 2021 - 16:41:05.563 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.566 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
-17 May 2021 - 16:41:05.567 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.567 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
-17 May 2021 - 16:41:05.571 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.574 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
-17 May 2021 - 16:41:05.575 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
-17 May 2021 - 16:41:05.577 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.578 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
-17 May 2021 - 16:41:05.577 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.577 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.581 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.583 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
-17 May 2021 - 16:41:05.585 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.594 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.595 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.596 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.597 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.593 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.601 [http-nio-auto-1-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
-17 May 2021 - 16:41:05.601 [http-nio-auto-1-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
-17 May 2021 - 16:41:05.602 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.602 [http-nio-auto-1-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.603 [http-nio-auto-1-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.613 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
-17 May 2021 - 16:41:05.614 [http-nio-auto-1-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.614 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.615 [http-nio-auto-1-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.620 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.762 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
-17 May 2021 - 16:41:05.763 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.771 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:05.830 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
-17 May 2021 - 16:41:05.832 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:05.841 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
-17 May 2021 - 16:41:05.841 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
-17 May 2021 - 16:41:05.843 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
-17 May 2021 - 16:41:05.844 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-17 May 2021 - 16:41:05.846 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-17 May 2021 - 16:41:05.846 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon May 17 16:41:05 BST 2021, status=404, error=Not Found, message=, path=/favicon.ico}]
-17 May 2021 - 16:41:05.847 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
-17 May 2021 - 16:41:06.074 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/cacheStatistics", parameters={}
-17 May 2021 - 16:41:06.075 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#cacheInfo(Model)
-17 May 2021 - 16:41:06.076 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:41:06.081 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:07.863 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
-17 May 2021 - 16:41:07.864 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#index(Model)
-17 May 2021 - 16:41:07.866 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:41:07.872 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:07.950 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
-17 May 2021 - 16:41:07.953 [http-nio-auto-1-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:07.955 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
-17 May 2021 - 16:41:07.957 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
-17 May 2021 - 16:41:07.958 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
-17 May 2021 - 16:41:07.958 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:07.959 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:07.959 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:07.961 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
-17 May 2021 - 16:41:07.962 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
-17 May 2021 - 16:41:07.963 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:07.964 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:07.975 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:07.976 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:07.981 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:07.984 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:07.986 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
-17 May 2021 - 16:41:07.987 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:07.987 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:07.991 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
-17 May 2021 - 16:41:07.993 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:07.995 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:08.000 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:08.007 [http-nio-auto-1-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:08.031 [http-nio-auto-1-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
-17 May 2021 - 16:41:08.032 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
-17 May 2021 - 16:41:08.033 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:08.033 [http-nio-auto-1-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:08.037 [http-nio-auto-1-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:08.037 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:08.183 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
-17 May 2021 - 16:41:08.184 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:08.192 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:08.270 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
-17 May 2021 - 16:41:08.272 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:08.275 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
-17 May 2021 - 16:41:08.276 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
-17 May 2021 - 16:41:08.277 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
-17 May 2021 - 16:41:08.278 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-17 May 2021 - 16:41:08.280 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-17 May 2021 - 16:41:08.281 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon May 17 16:41:08 BST 2021, status=404, error=Not Found, message=, path=/favicon.ico}]
-17 May 2021 - 16:41:08.283 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
-17 May 2021 - 16:41:08.495 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/pattern.png", parameters={}
-17 May 2021 - 16:41:08.495 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:08.513 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:08.671 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/location?name=Porto", parameters={masked}
-17 May 2021 - 16:41:08.677 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#getDataByLocation(Location, Model)
-17 May 2021 - 16:41:08.679 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:41:08.686 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.375 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
-17 May 2021 - 16:41:10.376 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#index(Model)
-17 May 2021 - 16:41:10.377 [http-nio-auto-1-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:41:10.383 [http-nio-auto-1-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.513 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
-17 May 2021 - 16:41:10.514 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
-17 May 2021 - 16:41:10.515 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.518 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.520 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
-17 May 2021 - 16:41:10.522 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.523 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.520 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
-17 May 2021 - 16:41:10.526 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.527 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.531 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.532 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.533 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
-17 May 2021 - 16:41:10.534 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.533 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
-17 May 2021 - 16:41:10.535 [http-nio-auto-1-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.539 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
-17 May 2021 - 16:41:10.540 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.543 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.545 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
-17 May 2021 - 16:41:10.546 [http-nio-auto-1-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.546 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.548 [http-nio-auto-1-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.543 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
-17 May 2021 - 16:41:10.548 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
-17 May 2021 - 16:41:10.550 [http-nio-auto-1-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.550 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.552 [http-nio-auto-1-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.554 [http-nio-auto-1-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.558 [http-nio-auto-1-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.746 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
-17 May 2021 - 16:41:10.747 [http-nio-auto-1-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.754 [http-nio-auto-1-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:10.816 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
-17 May 2021 - 16:41:10.817 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-17 May 2021 - 16:41:10.819 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
-17 May 2021 - 16:41:10.820 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
-17 May 2021 - 16:41:10.820 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
-17 May 2021 - 16:41:10.821 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-17 May 2021 - 16:41:10.823 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-17 May 2021 - 16:41:10.823 [http-nio-auto-1-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon May 17 16:41:10 BST 2021, status=404, error=Not Found, message=, path=/favicon.ico}]
-17 May 2021 - 16:41:10.825 [http-nio-auto-1-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
-17 May 2021 - 16:41:11.062 [http-nio-auto-1-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/cacheStatistics", parameters={}
-17 May 2021 - 16:41:11.062 [http-nio-auto-1-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#cacheInfo(Model)
-17 May 2021 - 16:41:11.064 [http-nio-auto-1-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-17 May 2021 - 16:41:11.070 [http-nio-auto-1-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-17 May 2021 - 16:41:11.926 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [airquality.IntegrationTests], using SpringBootContextLoader
-17 May 2021 - 16:41:11.958 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration airquality.Homework1AirQualityApplication for test class airquality.IntegrationTests
-17 May 2021 - 16:41:11.958 [main] DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [airquality.IntegrationTests]: using defaults.
-17 May 2021 - 16:41:11.958 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-17 May 2021 - 16:41:11.958 [main] DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-17 May 2021 - 16:41:11.958 [main] DEBUG o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-17 May 2021 - 16:41:11.958 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@31aa9b01, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2148b47e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@410f1452, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@463a1f47, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@23ade612, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47224d5d, org.springframework.test.context.event.EventPublishingTestExecutionListener@7e366c6f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@68e094c9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@243162b1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@712c9bcf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c34c491, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@509e4902, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7f958d4a]
-17 May 2021 - 16:41:12.068 [main] DEBUG o.s.boot.SpringApplication - Loading source class airquality.Homework1AirQualityApplication,class airquality.IntegrationTests$Config
-17 May 2021 - 16:41:12.088 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@578c99ac
-17 May 2021 - 16:41:13.125 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-17 May 2021 - 16:41:13.173 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
-17 May 2021 - 16:41:13.173 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
-17 May 2021 - 16:41:13.320 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-17 May 2021 - 16:41:13.338 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-17 May 2021 - 16:41:13.527 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-17 May 2021 - 16:41:13.527 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: 
-17 May 2021 - 16:41:13.543 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-17 May 2021 - 16:41:15.238 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.APIController#cacheJsonStats()
-17 May 2021 - 16:41:15.253 [main] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
-17 May 2021 - 16:41:15.253 [main] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["{}"]
-17 May 2021 - 16:41:15.753 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.APIController#cacheStats()
-17 May 2021 - 16:41:15.753 [main] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-17 May 2021 - 16:41:15.753 [main] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{Hits=1, Misses=1, Requests=2}]
-17 May 2021 - 16:41:16.701 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.APIController#getValidLocation(String)
-17 May 2021 - 16:41:16.733 [main] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-17 May 2021 - 16:41:16.733 [main] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
-17 May 2021 - 16:41:18.712 [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@578c99ac, started on Mon May 17 16:41:12 BST 2021
-17 May 2021 - 16:41:18.712 [SpringContextShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28fa700e, started on Mon May 17 16:40:48 BST 2021
+18 May 2021 - 16:06:05.423 [restartedMain] DEBUG o.s.boot.SpringApplication - Loading source class airquality.Homework1AirQualityApplication
+18 May 2021 - 16:06:05.723 [restartedMain] DEBUG o.s.b.d.restart.ChangeableUrls - Matching URLs for reloading : [file:/C:/Users/Alex/Desktop/3_2SEM/TQS/tqs_portfolio/Homework/Homework1_AirQuality/target/classes/]
+18 May 2021 - 16:06:05.724 [restartedMain] DEBUG o.s.b.d.settings.DevToolsSettings - Included patterns for restart : []
+18 May 2021 - 16:06:05.726 [restartedMain] DEBUG o.s.b.d.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
+18 May 2021 - 16:06:05.727 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18 May 2021 - 16:06:05.730 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18 May 2021 - 16:06:05.733 [restartedMain] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61ac6375
+18 May 2021 - 16:06:08.426 [restartedMain] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: C:\Users\Alex\.m2\repository\org\springframework\boot\spring-boot\2.4.5\spring-boot-2.4.5.jar
+18 May 2021 - 16:06:08.427 [restartedMain] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: C:\Users\Alex\.m2\repository\org\springframework\boot\spring-boot\2.4.5\spring-boot-2.4.5.jar
+18 May 2021 - 16:06:08.428 [restartedMain] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+18 May 2021 - 16:06:08.607 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+18 May 2021 - 16:06:08.919 [restartedMain] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+18 May 2021 - 16:06:08.920 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3187 ms
+18 May 2021 - 16:06:08.960 [restartedMain] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+18 May 2021 - 16:06:08.960 [restartedMain] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], webServlet urls=[/h2-console/*]
+18 May 2021 - 16:06:09.001 [restartedMain] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+18 May 2021 - 16:06:09.002 [restartedMain] DEBUG o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+18 May 2021 - 16:06:09.004 [restartedMain] DEBUG o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+18 May 2021 - 16:06:09.490 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+18 May 2021 - 16:06:09.613 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+18 May 2021 - 16:06:09.623 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+18 May 2021 - 16:06:09.665 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+18 May 2021 - 16:06:09.676 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+18 May 2021 - 16:06:09.801 [restartedMain] DEBUG o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+18 May 2021 - 16:06:09.981 [restartedMain] DEBUG o.s.b.d.livereload.LiveReloadServer - Starting live reload server on port 35729
+18 May 2021 - 16:06:09.985 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+18 May 2021 - 16:06:10.125 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+18 May 2021 - 16:06:10.167 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Creating new Restarter for thread Thread[main,5,main]
+18 May 2021 - 16:06:10.168 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Immediately restarting application
+18 May 2021 - 16:06:10.168 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@44421497
+18 May 2021 - 16:06:10.168 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Starting application airquality.Homework1AirQualityApplication with URLs [file:/C:/Users/Alex/Desktop/3_2SEM/TQS/tqs_portfolio/Homework/Homework1_AirQuality/target/classes/]
+18 May 2021 - 16:06:14.781 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18 May 2021 - 16:06:14.782 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+18 May 2021 - 16:06:14.783 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+18 May 2021 - 16:06:14.783 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+18 May 2021 - 16:06:14.785 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@72af52d1
+18 May 2021 - 16:06:14.786 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@cad320b
+18 May 2021 - 16:06:14.786 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+18 May 2021 - 16:06:14.787 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+18 May 2021 - 16:06:14.803 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+18 May 2021 - 16:06:14.810 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#index(Model)
+18 May 2021 - 16:06:14.888 [http-nio-8081-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:06:15.673 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:15.834 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:06:15.850 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.873 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:06:15.877 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.879 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:06:15.880 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:06:15.881 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.884 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.898 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:06:15.899 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:06:15.899 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.906 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.928 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:15.929 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:15.930 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:15.958 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:15.963 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:15.971 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:06:15.974 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.980 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:06:15.981 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.987 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:06:15.988 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:06:15.991 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:15.991 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:16.036 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:16.045 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:16.058 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:16.076 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:16.092 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:16.343 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:06:16.346 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:16.385 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:16.634 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+18 May 2021 - 16:06:16.637 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:16.646 [http-nio-8081-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+18 May 2021 - 16:06:16.648 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+18 May 2021 - 16:06:16.659 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+18 May 2021 - 16:06:16.661 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+18 May 2021 - 16:06:16.691 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+18 May 2021 - 16:06:16.692 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue May 18 16:06:16 BST 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+18 May 2021 - 16:06:16.797 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+18 May 2021 - 16:06:23.934 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/pattern.png", parameters={}
+18 May 2021 - 16:06:23.937 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:23.944 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:25.865 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/location?name=Porto", parameters={masked}
+18 May 2021 - 16:06:25.866 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#getDataByLocation(Location, Model)
+18 May 2021 - 16:06:28.275 [http-nio-8081-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:06:28.324 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.448 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:06:28.459 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.459 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:06:28.461 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.465 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:06:28.465 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:06:28.467 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.467 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.475 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.476 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.483 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.495 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:06:28.497 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:06:28.499 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:06:28.500 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.500 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.503 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:06:28.502 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:06:28.505 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.497 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.509 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.510 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.511 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.517 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.519 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:06:28.520 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.527 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.537 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.555 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.561 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:28.825 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:06:28.827 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:28.835 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.349 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/moreInfo", parameters={}
+18 May 2021 - 16:06:56.351 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#moreInfobyDate(Model)
+18 May 2021 - 16:06:56.356 [http-nio-8081-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:06:56.436 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.531 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:06:56.533 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.534 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:06:56.535 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:06:56.535 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.535 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.535 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:06:56.537 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.543 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.546 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:06:56.547 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.548 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.548 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.547 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.556 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:06:56.557 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.559 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.580 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.649 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:06:56.651 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.657 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.689 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:06:56.695 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.699 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:06:56.699 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:06:56.700 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.700 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.703 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.705 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.707 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:56.937 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:06:56.939 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:56.950 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:06:57.854 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/pattern.png", parameters={}
+18 May 2021 - 16:06:57.870 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:06:57.887 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:04.209 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/locationAndDate?name=Porto&time=2021-05-20", parameters={masked}
+18 May 2021 - 16:07:04.210 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#getLocalByNameAndDate(Location, Model)
+18 May 2021 - 16:07:05.397 [http-nio-8081-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:07:05.430 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.508 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:07:05.513 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:07:05.517 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.518 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.523 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.526 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:07:05.528 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.529 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:07:05.530 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.532 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:07:05.534 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.533 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.536 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.537 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.546 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.555 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:07:05.556 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:07:05.556 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:07:05.556 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:07:05.556 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:07:05.556 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.556 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.557 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.557 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.557 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.561 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.563 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.566 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.566 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.570 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:05.860 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:07:05.862 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:05.873 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:29.661 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/cacheStatistics", parameters={}
+18 May 2021 - 16:07:29.663 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#cacheInfo(Model)
+18 May 2021 - 16:07:29.668 [http-nio-8081-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:07:29.785 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:29.888 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:07:29.889 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:29.891 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:07:29.892 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:07:29.892 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:29.893 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:29.895 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:29.897 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:29.899 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:29.891 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:07:29.905 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:29.910 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:30.236 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:07:30.238 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:30.255 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.039 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+18 May 2021 - 16:07:58.041 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#index(Model)
+18 May 2021 - 16:07:58.043 [http-nio-8081-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:07:58.054 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.147 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:07:58.148 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:07:58.149 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.150 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:07:58.151 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.154 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.159 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:07:58.162 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:07:58.159 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:07:58.165 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.165 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.168 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.176 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.180 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.181 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:07:58.182 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.182 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.185 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.186 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.188 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:07:58.189 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.190 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.196 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.197 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.197 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:07:58.198 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.203 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:07:58.204 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.205 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.208 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:58.493 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:07:58.500 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:58.519 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:07:59.164 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/pattern.png", parameters={}
+18 May 2021 - 16:07:59.167 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:07:59.177 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.303 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/location?name=Porto", parameters={masked}
+18 May 2021 - 16:08:00.305 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#getDataByLocation(Location, Model)
+18 May 2021 - 16:08:00.313 [http-nio-8081-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:08:00.341 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.460 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:08:00.462 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.466 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:08:00.469 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.470 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:08:00.471 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.471 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.475 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:08:00.476 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:08:00.477 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.477 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:08:00.476 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.478 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.480 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.480 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.485 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.486 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.491 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.537 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:08:00.538 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:08:00.538 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.539 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.540 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:08:00.541 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.544 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.545 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.547 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:08:00.548 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.550 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.554 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:00.892 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:08:00.894 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:00.902 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:03.188 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/cacheStatistics", parameters={}
+18 May 2021 - 16:08:03.188 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#cacheInfo(Model)
+18 May 2021 - 16:08:03.191 [http-nio-8081-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:08:03.197 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:03.259 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:08:03.259 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:08:03.260 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:08:03.261 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:03.261 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:03.261 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:08:03.261 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:03.263 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:03.268 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:03.270 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:03.272 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:03.274 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:03.494 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:08:03.496 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:03.520 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.571 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/cacheHistory", parameters={}
+18 May 2021 - 16:08:38.572 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#getCacheHistory(Model)
+18 May 2021 - 16:08:38.574 [http-nio-8081-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:08:38.623 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.733 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:08:38.734 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.734 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:08:38.735 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.736 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:08:38.737 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.738 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.740 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:08:38.740 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.742 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.743 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.744 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:08:38.745 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.746 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.736 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:08:38.748 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.748 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.750 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:08:38.751 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.754 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.754 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.755 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:08:38.756 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.759 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.761 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:08:38.763 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.748 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:08:38.767 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:38.770 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:38.776 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:39.080 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:08:39.081 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:39.087 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.337 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+18 May 2021 - 16:08:44.338 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.HomeController#index(Model)
+18 May 2021 - 16:08:44.339 [http-nio-8081-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:08:44.349 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.416 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:08:44.417 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.420 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:08:44.421 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.421 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:08:44.421 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.422 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.424 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.431 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.437 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:08:44.438 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:08:44.438 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:08:44.438 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.439 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.439 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.438 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:08:44.440 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.440 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:08:44.440 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:08:44.441 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.441 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.443 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.447 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.449 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:08:44.448 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.450 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.457 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.461 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.464 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.461 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:08:44.628 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:08:44.629 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:08:44.639 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:09:20.605 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-ui/index.html", parameters={}
+18 May 2021 - 16:09:20.607 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:09:20.614 [http-nio-8081-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+18 May 2021 - 16:09:20.614 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+18 May 2021 - 16:09:20.615 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+18 May 2021 - 16:09:20.616 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+18 May 2021 - 16:09:20.672 [http-nio-8081-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+18 May 2021 - 16:09:20.673 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+18 May 2021 - 16:09:34.570 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-ui/", parameters={}
+18 May 2021 - 16:09:34.573 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:09:34.589 [http-nio-8081-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+18 May 2021 - 16:09:34.589 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+18 May 2021 - 16:09:34.591 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+18 May 2021 - 16:09:34.593 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+18 May 2021 - 16:09:34.665 [http-nio-8081-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+18 May 2021 - 16:09:34.665 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+18 May 2021 - 16:10:06.479 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/location?name=Porto", parameters={masked}
+18 May 2021 - 16:10:06.480 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#getDataByLocation(Location, Model)
+18 May 2021 - 16:10:06.483 [http-nio-8081-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+18 May 2021 - 16:10:06.494 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.594 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/bootstrap.min.css", parameters={}
+18 May 2021 - 16:10:06.595 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.603 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.608 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/et-lineicon.css", parameters={}
+18 May 2021 - 16:10:06.609 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.609 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/font-awesome.min.css", parameters={}
+18 May 2021 - 16:10:06.609 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+18 May 2021 - 16:10:06.610 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.lwtCountdown-1.0.js", parameters={}
+18 May 2021 - 16:10:06.610 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.min.js", parameters={}
+18 May 2021 - 16:10:06.610 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.610 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.610 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.610 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.611 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.stellar.min.js", parameters={}
+18 May 2021 - 16:10:06.612 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.613 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.616 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.616 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.616 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.617 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/jquery.nicescroll.min.js", parameters={}
+18 May 2021 - 16:10:06.618 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.618 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.618 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.625 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.627 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/animated.js", parameters={}
+18 May 2021 - 16:10:06.628 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.628 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/main.js", parameters={}
+18 May 2021 - 16:10:06.629 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.634 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.634 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:06.872 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fonts/fontawesome-webfont.woff?v=4.2.0", parameters={masked}
+18 May 2021 - 16:10:06.873 [http-nio-8081-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+18 May 2021 - 16:10:06.879 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+18 May 2021 - 16:10:09.903 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/location", parameters={}
+18 May 2021 - 16:10:09.904 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.LocationController#getDataByLocation(Location, Model)
+18 May 2021 - 16:10:10.800 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: java.lang.NullPointerException: Cannot invoke "java.util.Map.entrySet()" because the return value of "airquality.service.DataAccess.getDataByLocation(String)" is null
+18 May 2021 - 16:10:10.814 [http-nio-8081-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.util.Map.entrySet()" because the return value of "airquality.service.DataAccess.getDataByLocation(String)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.util.Map.entrySet()" because the return value of "airquality.service.DataAccess.getDataByLocation(String)" is null
+	at airquality.controller.LocationController.getDataByLocation(LocationController.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+18 May 2021 - 16:10:10.816 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+18 May 2021 - 16:10:10.817 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+18 May 2021 - 16:10:10.853 [http-nio-8081-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+18 May 2021 - 16:10:10.854 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+18 May 2021 - 16:10:21.629 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/cacheStatistics_api", parameters={}
+18 May 2021 - 16:10:21.629 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to airquality.controller.APIController#cacheStats()
+18 May 2021 - 16:10:21.636 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+18 May 2021 - 16:10:21.637 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{Hits=2, Misses=3, Requests=5}]
+18 May 2021 - 16:10:21.639 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
